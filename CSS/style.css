@@ -1,0 +1,89 @@
+@font-face {
+  font-family: fontall;
+  src: url(../Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: judul;
+  src: url(../Bungee_Spice/BungeeSpice-Regular.ttf);
+}
+* {
+  font-family: fontall;
+}
+/* body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ccc;
+} */
+/* ini versi grid suapaya ke tengah */
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #e7e5e5;
+}
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 100%;
+  animation: animasigoyang 5s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.text-login {
+  text-align: center;
+  font-family: fontall;
+  font-size: 50px;
+  cursor: pointer;
+}
+.text-login:hover {
+  transform: scale(1.5);
+}
+.box input,
+.box label {
+  display: block;
+  margin-bottom: 10px;
+  left: 0;
+  right: 0;
+}
+input {
+  border-radius: 7px;
+  border: 0.3 solid black;
+  padding: 10px;
+  width: 94%;
+}
+.box a {
+  text-decoration: underline;
+  color: red;
+}
+.box a:hover {
+  color: #e7e5e5;
+}
+.box .btn {
+  margin: 0 auto;
+  cursor: pointer;
+  background: green;
+  width: 50%;
+  color: white;
+  border: none;
+}
+.btn:hover {
+  background-color: rgb(10, 30, 48);
+  transition: 0.5s all ease-in-out;
+}
+@keyframes animasigoyang {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: fontall;
+  src: url(../Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: judul;
+  src: url(../Honk/Honk-Regular-VariableFont_MORF\SHLN.ttf);
+}
+* {
+  font-family: fontall;
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: judul;
+}
+h3 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.box {
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  padding-top: 3px;
+  animation: goyang 3s ease-in-out infinite;
+}
+.box label,
+input {
+  display: block;
+  margin-bottom: 1rem;
+}
+.box input {
+  background: white;
+  padding: 1rem;
+  width: 95%;
+  border-radius: 10px;
+  border: none;
+  color: green;
+}
+.box a .btn {
+  padding: 10px 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.box a .btn:hover {
+  background: rgba(173, 143, 143, 0.888);
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+@keyframes goyang {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
